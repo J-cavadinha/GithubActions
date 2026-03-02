@@ -1,4 +1,4 @@
-Projeto: Pipeline de Validação Contínua
+Projeto: Pipeline de Validação Contínua -
 
 O objetivo deste projeto é criar um fluxo de trabalho (workflow) que verifica a qualidade do seu código automaticamente toda vez que você fizer um envio (push) para o repositório.
 
