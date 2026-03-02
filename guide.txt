@@ -1,0 +1,20 @@
+Projeto: Pipeline de Validação Contínua
+
+O objetivo deste projeto é criar um fluxo de trabalho (workflow) que verifica a qualidade do seu código automaticamente toda vez que você fizer um envio (push) para o repositório.
+
+Por que este é o melhor projeto inicial
+
+Foco nos fundamentos: Você aplicará os conceitos principais (eventos, trabalhos e passos) sem se preocupar com configurações complexas de servidores ou chaves de segurança externas.
+Feedback visual rápido: A aba "Actions" no GitHub mostrará imediatamente se a execução funcionou (verde) ou falhou (vermelho).
+Cenário real: Este é o uso mais comum do GitHub Actions em equipes de desenvolvimento profissionais.
+
+Passos para a implementação
+
+Crie um repositório no GitHub: Inicie um repositório vazio e clone-o para o seu computador.
+Escreva um código simples: Crie um pequeno script em uma linguagem de sua preferência (como Python ou JavaScript), por exemplo, uma função matemática que soma dois números.
+Escreva um teste automatizado: Adicione um teste básico que verifica se a sua função matemática retorna o resultado correto.
+Crie a estrutura de diretórios do Actions: Na raiz do seu projeto, crie a pasta oculta .github/workflows/.
+Crie o arquivo YAML: Dentro da pasta criada, crie um arquivo chamado ci.yml.
+Defina os gatilhos (Triggers): Configure o arquivo YAML para rodar nos eventos on: push e on: pull_request na branch principal (main).
+Defina os passos (Steps): Configure o seu trabalho (job) para fazer o checkout do código usando a action padrão actions/checkout, instalar a linguagem escolhida, e rodar os comandos de teste no terminal.
+Teste a automação: Faça um commit propositalmente quebrado (onde o teste falha), envie para o GitHub e observe o erro na aba Actions. Depois, corrija o código, faça um novo envio e veja o fluxo ser aprovado.
