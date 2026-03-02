@@ -2,7 +2,7 @@ import unittest
 
 # A sua função de teste
 def sum2(a, b):
-    return a - b
+    return a + b
 
 # Classe de testes estruturada para o unittest
 class TestSoma(unittest.TestCase):
