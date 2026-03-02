@@ -1,24 +1,23 @@
-name: Validacao output
+name: Validacao Continua
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   testes:
-    runs-on: ubunto-latest
-
+    runs-on: ubuntu-latest
     steps:
-    - name: Code checkout
-      uses: actions/checkout@v4
+      - name: Fazer checkout do código
+        uses: actions/checkout@v4
 
-    - name: Python 3.10 config
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.10"
+      - name: Configurar Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
-    - name: Run automated test
-      run: |
-        python -m uniitest sum.py
+      - name: Rodar testes automatizados
+        run: |
+          python -m unittest test_app.py
