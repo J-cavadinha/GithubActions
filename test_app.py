@@ -12,7 +12,7 @@ class TestSoma(unittest.TestCase):
         self.assertEqual(sum2(2, 3), 5)
         
     def test_soma_numeros_negativos(self):
-        # Verifica se -1 + (-2) é exatamente igual a -3
+        # Verifica se -1 + (-2) é exatamente igual a -3.
         self.assertEqual(sum2(-1, -2), -3)
 
 if __name__ == '__main__':
